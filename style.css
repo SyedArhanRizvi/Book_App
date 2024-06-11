@@ -1,0 +1,944 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    width: 97vw;
+    height: 5em;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .logo img{
+    height: 2em;
+    width: 3em;
+}
+nav .ac{
+    padding: 20px;
+}
+nav .ac .signUp{
+    height: 3em;
+    width: 12em;
+    background: purple;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+.hero{
+    width: 97vw;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.hero .search{
+    width: 25%;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+.hero .search .catagory{
+    width: 100%;
+    height: 75vh;
+    overflow: auto;
+    /* font-size: 1em; */
+    padding: 20px;
+    margin-bottom: 40px;
+    color: rgb(58, 58, 58);
+}
+.hero .search .catagory h1{
+    margin: 10px;
+    font-size: 1.4em;
+    transition: 0.1s;
+}
+.hero .search .catagory h1:hover{
+    color: blue;
+    transform: scale(1.1);
+    font-size: 1.7em;
+}
+.hero .search .ghaza{
+    width: 100%;
+    height: 25em;
+    background: rgb(99, 3, 99);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+
+}
+.hero .main{
+    width: 75%;
+    /* border: 2px solid red; */
+    padding: 50px;
+}
+.hero .main .allBooks{
+    margin-bottom: 40px;
+}
+.hero .main .allBooks h1{
+    font-size: 3em;
+}
+.hero .main .allBooks h1 span{
+    color: blue;
+}
+.hero .main .c1{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c1 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c1 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c1 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c1 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c1 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c1 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c1 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c1 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c2{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c2 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c2 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c2 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c2 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c2 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c2 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c2 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c2 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c3{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c3 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c3 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c3 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c3 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c3 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c3 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c3 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c3 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c4{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c4 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c4 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c4 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c4 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c4 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c4 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c4 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c4 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c5{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c5 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c5 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c5 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c5 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c5 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c5 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c5 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c5 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c6{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c6 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c6 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c6 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c6 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c6 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c6 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c6 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c6 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c7{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c7 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c7 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c7 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c7 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c7 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c7 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c7 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c7 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c8{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c8 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c8 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c8 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c8 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c8 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c8 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c8 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c8 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c9{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c9 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c9 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c9 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c9 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c9 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c9 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c9 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c9 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c10{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c10 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c10 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c10 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c10 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c10 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c10 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c10 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c10 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c11{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c11 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c11 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c11 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c11 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c11 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c11 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c11 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c11 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c12{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c12 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c12 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c12 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c12 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c12 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c12 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c12 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c12 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c13{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c13 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c13 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c13 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c13 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c13 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c13 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c13 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c13 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c14{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c14 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c14 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c14 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c14 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c14 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c14 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c14 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c14 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c15{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c15 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c15 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c15 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c15 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c15 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c15 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c15 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c15 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c16{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c16 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c16 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c16 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c16 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c16 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c16 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c16 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c16 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c17{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c17 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c17 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c17 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c17 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c17 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c17 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c17 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c17 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
+
+.hero .main .c18{
+    width: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hero .main .c18 .ctext{
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 0.8em;
+    color: rgb(75, 75, 75);
+}
+.hero .main .c18 .booksCont1{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.hero .main .c18 .booksCont1 .imgCont{
+    width: 100%;
+    height: 20em;
+}
+/* .hero .main .c1 .booksCont1 .imgCont:hover{
+    
+} */
+.hero .main .c18 .booksCont1 .imgCont img{
+    height: 100%;
+    width: 100%;
+}
+.hero .main .c18 .booksCont1 h1{
+    margin-left: 10px;
+} 
+.hero .main .c18 .booksCont1 p{
+    margin-left: 10px;
+    color: gray;
+} 
+.hero .main .c18 .seeMoreBtn {
+    width: 100%;
+}
+.hero .main .c18 .seeMoreBtn button{
+    padding: 20px 60px;
+    border-radius: 30px;
+    /* background: wheat; */
+    border: none;
+    border: 2px solid blue;
+    text-align: center;
+    margin-left: 80%;
+}
